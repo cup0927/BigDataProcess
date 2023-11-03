@@ -79,7 +79,7 @@ for i in total_dic.values():
     elif countCPlus < numberOfCPlus :
         ws.cell(row = i, column = 8, value= 'C+')
         countCPlus+=1
-    elif countCZero < numberOfCZero :
+    else:
         ws.cell(row = i, column = 8, value= 'C0') 
         countCZero+=1
     
