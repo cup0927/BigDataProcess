@@ -68,19 +68,19 @@ for i in total_dic.values():
         ws.cell(row = i, column = 8, value= 'A+')
         countAPlus+=1
     elif countAZero < numberOfAZero :
-        ws.cell(row = i, column = 8, value= 'A') 
+        ws.cell(row = i, column = 8, value= 'A0') 
         countAZero+=1
     elif countBPlus < numberOfBPlus :
         ws.cell(row = i, column = 8, value= 'B+')
         countBPlus+=1
     elif countBZero < numberOfBZero :
-        ws.cell(row = i, column = 8, value= 'B') 
+        ws.cell(row = i, column = 8, value= 'B0') 
         countBZero+=1
     elif countCPlus < numberOfCPlus :
         ws.cell(row = i, column = 8, value= 'C+')
         countCPlus+=1
     elif countCZero < numberOfCZero :
-        ws.cell(row = i, column = 8, value= 'C') 
+        ws.cell(row = i, column = 8, value= 'C0') 
         countCZero+=1
     
 wb.save('student.xlsx')
