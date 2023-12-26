@@ -8,7 +8,6 @@ import operator
 import os
 import sys
     
-    
 def createDataSet(foldername):
     labels = []
     fileList = os.listdir(foldername)
@@ -66,11 +65,10 @@ if __name__ == "__main__":
 
     matrix, labels = createDataSet(trainingDataFolderName)
     
-    for k in range(1, 20): # 1부터 20까지의 홀수만
-        count = 0 # 전체 데이터 개수
-        errorCount = 0 # 에러가 발생한 데이터 개수
-    
-        for i in range(length): # 테스트 데이터 개수만큼 반복
+    for k in range(1, 21): 
+        count = 0 
+        errorCount = 0 
+        for i in range(length): 
             answer = int(testFileList[i].split('_')[0])
             testData = getVector(testDataFolderName + '/' + testFileList[i])
             classifiedResult = classify0(testData, matrix, labels, k)
